@@ -21,7 +21,7 @@ html {
  */
 
 body {
-	color: #545149;
+	*color: #545149;
 	background-color: #f4f1ec;
 	font-family: Source Sans Pro, sans-serif;
 	font-size: 24px;
@@ -30,3 +30,11 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+#profile-image {
+	margin-top: 5px;
+}
+
+#profile-name {
+	margin-top: 0;
+}

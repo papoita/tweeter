@@ -9,8 +9,11 @@ nav {
 	display: flex;
 }
 .overlay {
-	position: absolute;
 	z-index: 10;
+	position: sticky;
+	/*height: 400px;*/
+	width: 100%;
+	top: 0;
 }
 .nav-content {
 	margin-left: auto;

@@ -1,0 +1,11 @@
+/** @format */
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #950cf0;
+	background-image: url("/images/back-pattern.png");
+	opacity: 0.5;
+}
