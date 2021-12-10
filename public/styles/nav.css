@@ -8,6 +8,10 @@ nav {
 	padding: 1.5em;
 	display: flex;
 }
+.overlay {
+	position: absolute;
+	z-index: 10;
+}
 .nav-content {
 	margin-left: auto;
 	display: block;
