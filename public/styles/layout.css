@@ -31,6 +31,12 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
+main {
+	width: 90%;
+	margin: auto;
+	background-color: #f4f1ec;
+}
+
 #profile-image {
 	margin-top: 5px;
 }
