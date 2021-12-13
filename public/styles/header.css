@@ -5,7 +5,11 @@ header {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background-color: #950cf0;
-	background-image: url("/images/back-pattern.png");
-	opacity: 0.5;
+background: rgba(9,9,121,1);
+background-image: url("/images/back-pattern.png");
+}
+
+#profile-name{
+	font-weight: 600;
+	color:white;
 }

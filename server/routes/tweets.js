@@ -24,7 +24,7 @@ module.exports = function(DataHelpers) {
     };
 
 
-tweetsRoutes.post("/tweets/", (req, res) => {
+tweetsRoutes.post("/tweets", (req, res) => {
   const newPost = req.params.tweet-text;
   tweet[content].text = {
     newPost

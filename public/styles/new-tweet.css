@@ -1,0 +1,48 @@
+h2{
+  font-weight: 600;
+}
+.new-tweet{
+  background-color: rgba(0,212,255,1);
+  padding: 20px;
+  background-image: url("/images/back-pattern.png");
+	
+}
+
+#tweet-form{
+  display:block;
+  
+}
+
+#tweet-text{
+  font-style: italic;
+  padding: 10px;
+}
+
+#submit-btn{
+  color: whitesmoke;
+  background-color: #0F248A;
+  display: block;
+  margin:  auto;
+  padding: 10px 20px;;
+  border-radius: 10px;
+  border: 1px solid #1482C9;
+
+}
+
+#submit-btn:hover{
+color: #0F248A;
+  background-color: white;
+  display: block;
+  margin:  auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #0F248A;
+  cursor:pointer;
+}
+
+.counter{
+  font-weight: 600;
+  display:flex;
+  justify-content: flex-end;
+}
+
