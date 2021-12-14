@@ -10,9 +10,9 @@ console.log($charLength);
 //TODO fix once reach limit fo negtive numbers it all turns red
 //take css to css place///how to do that add html new class ?
 //make sure siblings is the right way to go.. also input vs keydown
-console.log(count);
+//console.log(count);
 if ($charLeft > 0){
-let count = $(this).siblings("output");
+let count = $(this).siblings("output").css( "color", "black" );
 count.text($charLeft);
 } else {
   let count = $(this).siblings("output").css( "color", "red" );
