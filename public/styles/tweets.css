@@ -3,16 +3,15 @@ section.tweet-container {
     margin: 5px;
   }
 
- .tweet-container:hover{
-   box-shadow: 10px 5px 5px grey;
- }
   footer{
     display:flex;
     flex-direction: row;
     font-size: 16px;
     justify-content: space-between;
   }
-
+   .tweet-container:hover{
+   box-shadow: 10px 5px 5px grey;
+ }
    .user{
     display:flex;
      flex-direction: row;
