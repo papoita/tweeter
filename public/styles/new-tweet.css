@@ -1,10 +1,11 @@
-h2{
+.compose-tweet{
   font-weight: 600;
 }
-.new-tweet{
+section {
   background-color: rgba(0,212,255,1);
   padding: 20px;
   background-image: url("/images/back-pattern.png");
+  margin-top: 5px;
 	
 }
 

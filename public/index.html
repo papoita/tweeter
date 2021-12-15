@@ -32,6 +32,9 @@
 	<!-- new-tweet CSS  -->
 	<link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
+	<!-- tweets CSS  -->
+	<link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
+
 	<!-- header App CSS  -->
 	<link rel="stylesheet" href="/styles/header.css" type="text/css" />
 
@@ -68,12 +71,12 @@
 		</div>
 		<br />
 		<div>
-			<h2 id="profile-name">Paola</h2>
+			<h1 id="profile-name">Paola</h1>
 		</div>
 	</header>
 	<main class="container">
 		<section class="new-tweet">
-			<h2>Compose Tweet</h2>
+			<h2 class="compose-tweet">Compose Tweet</h2>
 			<div class="col-12">
 				<form action="/tweets" method="POST" class="tweet-form">
 					<input class="col-11" name="text" id="tweet-text" placeholder="what are you humming about..."
@@ -87,32 +90,39 @@
 				</form>
 			</div>
 		</section>
-		<article class="tweet">
-			<header class="user">
-				<i class="far fa-user"></i>
-				<span class="username">
-					Rhoda JAcobs
-				</span>
-				<span class="userHandle">
-					@MrsJAcobs
-				</span>
+		<section class="tweet-container">
 
-			</header>
-			<p class="tweets-posted">
-				HEllo World!
-			</p>
-			<footer>
-				<span class="time-passed">
-					10 days ago
-				</span>
-				<span class="tweet-icons">
-					<i class="far fa-flag"></i>
-					<i class="fas fa-retweet"></i>
-					<i class="far fa-heart"></i>
 
-				</span>
-			</footer>
-		</article>
+			<article class="tweet">
+				<header class="user">
+
+					<i class="far fa-user col-1"></i>
+					<p class="username">
+						Rhoda JAcobs
+					</p>
+
+					<h3 class="user-handle">
+						@MrsJAcobs
+						</h2>
+
+				</header>
+				<p class="tweets-posted">
+					HEllo World!
+				</p>
+				<hr>
+				<footer>
+					<span class="time-passed">
+						10 days ago
+					</span>
+					<span class="tweet-icons">
+						<i class="far fa-flag"></i>
+						<i class="fas fa-retweet"></i>
+						<i class="far fa-heart"></i>
+
+					</span>
+				</footer>
+			</article>
+		</section>
 	</main>
 </body>
 

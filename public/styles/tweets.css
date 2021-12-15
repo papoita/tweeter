@@ -1,3 +1,38 @@
-header.tweets{
-  background-color: none;
-}
+section.tweet-container {
+    border: solid 3px darkblue;
+    margin: 5px;
+  }
+
+ .tweet-container:hover{
+   box-shadow: 10px 5px 5px grey;
+ }
+  footer{
+    display:flex;
+    flex-direction: row;
+    font-size: 16px;
+    justify-content: space-between;
+  }
+
+   .user{
+    display:flex;
+     flex-direction: row;
+    justify-content: space-between;
+  }
+  .user-handle{
+color: grey;
+  }
+
+  .fa-flag:hover{
+    color: darkgoldenrod;
+    cursor: pointer;
+  }
+
+  .fa-retweet:hover{
+    color: white;
+    cursor: pointer;
+  }
+
+   .fa-heart:hover{
+    color: red;
+    cursor: pointer;
+  }
