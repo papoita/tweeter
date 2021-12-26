@@ -5,7 +5,10 @@
  */
 
 // Test / driver code (temporary). Eventually will get this from the server.
-const tweetData = {
+
+$(document).ready(function(){
+
+const tweetData = [{
     "user": {
       "name": "Newton",
       "avatars": "https://i.imgur.com/73hZDYK.png",
@@ -16,10 +19,49 @@ const tweetData = {
       },
     "created_at": 1461116232227
  }
+]
+const renderTweets = function(tweets){
+  for (let tweet of tweets){
+    let $renderTweet = createTweetElement(tweet);
+    $(".tweet-container").append($renderTweet);
+  }
+}
 
-const $tweet = createTweetElement(tweetData);
+const createTweetElement = function(tweet){
+  const $tweet = $(`
+    	<article class="tweet">
+				<header class="user">
 
-// Test / driver code (temporary)
-console.log($tweet); // to see what it looks like
-$('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
+					<i class="far fa-user col-1"></i>
+					<p class="username">
+						Rhoda JAcobs
+					</p>
 
+					<h3 class="user-handle">
+						@MrsJAcobs
+						</h2>
+
+				</header>
+				<p class="tweets-posted">
+					HEllo World!
+				</p>
+				<hr>
+				<footer>
+					<span class="time-passed">
+						10 days ago
+					</span>
+					<span class="tweet-icons">
+						<i class="far fa-flag"></i>
+						<i class="fas fa-retweet"></i>
+						<i class="far fa-heart"></i>
+
+					</span>
+				</footer>
+			</article>`
+  );
+  return $tweet;
+}
+
+renderTweets(tweetData);
+
+});
