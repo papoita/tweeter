@@ -8,7 +8,7 @@
 
 $(document).ready(function(){
 
-
+//create new DOM element and appends it 
 const renderTweets = function(tweets){
    $(".tweet-container").empty();
   for (const tweet of tweets){
@@ -52,18 +52,33 @@ const createTweetElement = function(tweet){
   );
   return $tweet;
 }
-//add Event listner and prevent default behavior
-// .serialize() function turns a set of form data into a query string. This serialized data should be sent to the server in the data field of the AJAX POST request.
-$("tweet-form").on("submit", event =>{
-  //event.preventDefault();
-  let $tweet = $("tweet-form").serialize();
+
+
+
+$("#tweet-form").on("submit", event =>{
+  event.preventDefault();
+//validate length of tweet and alert error
+  let lengthTweet = $("#tweet-text").val().length;
+  if (lengthTweet >140){
+    alert("Only 140 characters allowed");
+    return;
+  }else if(!lengthTweet){
+    alert("write a tweet")
+  };
+ 
+//serialize and post tweet
+  let $tweet = $("#tweet-form").serialize();
   $.post("/tweets/", $tweet, (err, data) => {
     loadTweets();
+
+//clears text box after post
     const $input = $("#tweet-text");
     $input.val(" ").focus();
   })
 })
 
+
+//loads tweets
 const loadTweets = () => {
   $.get("/tweets", (tweet) => {
     renderTweets(tweet);
@@ -71,3 +86,4 @@ const loadTweets = () => {
 }
 loadTweets();
 });
+
