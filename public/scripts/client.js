@@ -10,10 +10,11 @@ $(document).ready(function(){
 
 //create new DOM element and appends it 
 const renderTweets = function(tweets){
-   $(".tweet-container").empty();
+//(doesn't reload all tweets
+   $("#tweet-container").empty();
   for (const tweet of tweets){
     let $renderTweet = createTweetElement(tweet);
-   $(".tweet-container").append($renderTweet);
+   $("#tweet-container").prepend($renderTweet);
   }
 };
 

@@ -84,8 +84,8 @@
 			<h2 class="compose-tweet">Compose Tweet</h2>
 			<div class="col-12">
 				<form action="/tweets" method="POST" class="tweet-form" id="tweet-form">
-					<input class="col-11" name="text" id="tweet-text" placeholder="what are you humming about..."
-						autofocus="on"></input>
+					<textarea class="col-11" name="text" id="tweet-text" placeholder="what are you humming about..."
+						autofocus="on"></textarea>
 					<output name="counter" class="counter" for="tweet-text"></output>
 
 					<div>
@@ -95,7 +95,7 @@
 				</form>
 			</div>
 		</section>
-		<section class="tweet-container">
+		<section class="tweet-container" id="tweet-container">
 
 
 			<article class="render-tweet">
