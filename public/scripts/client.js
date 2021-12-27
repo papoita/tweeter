@@ -31,16 +31,17 @@ const createTweetElement = function(tweet){
   const $tweet = $(`
     	<article class="tweet">
 				<header class="user">
-
+<div class="user-picture-name">
 					<i class="far fa-user col-1"></i>
 					<p class="username">
 						Rhoda JAcobs
 					</p>
-
+</div>
+<div>
 					<h3 class="user-handle">
 						@MrsJAcobs
 						</h2>
-
+</div>
 				</header>
 				<p class="tweets-posted">
 					HEllo World!
