@@ -46,6 +46,11 @@
 	<!-- External JS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+	<!-- timeago JS-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
+		integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 	<!-- App JS -->
 	<script type="text/javascript" src="/scripts/client.js"></script>
 
@@ -78,7 +83,7 @@
 		<section class="new-tweet">
 			<h2 class="compose-tweet">Compose Tweet</h2>
 			<div class="col-12">
-				<form action="/tweets" method="POST" class="tweet-form">
+				<form action="/tweets" method="POST" class="tweet-form" id="tweet-form">
 					<input class="col-11" name="text" id="tweet-text" placeholder="what are you humming about..."
 						autofocus="on"></input>
 					<output name="counter" class="counter" for="tweet-text"></output>

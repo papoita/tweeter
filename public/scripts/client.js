@@ -8,48 +8,38 @@
 
 $(document).ready(function(){
 
-const tweetData = [{
-    "user": {
-      "name": "Newton",
-      "avatars": "https://i.imgur.com/73hZDYK.png",
-        "handle": "@SirIsaac"
-      },
-    "content": {
-        "text": "If I have seen further it is by standing on the shoulders of giants"
-      },
-    "created_at": 1461116232227
- }
-]
+
 const renderTweets = function(tweets){
-  for (let tweet of tweets){
+   $(".tweet-container").empty();
+  for (const tweet of tweets){
     let $renderTweet = createTweetElement(tweet);
-    $(".tweet-container").append($renderTweet);
+   $(".tweet-container").append($renderTweet);
   }
-}
+};
 
 const createTweetElement = function(tweet){
   const $tweet = $(`
     	<article class="tweet">
 				<header class="user">
 <div class="user-picture-name">
-					<i class="far fa-user col-1"></i>
+					<img class="user-icon" src="${tweet.user.avatars}"></img>
 					<p class="username">
-						Rhoda JAcobs
+						${tweet.user.name}
 					</p>
 </div>
 <div>
-					<h3 class="user-handle">
-						@MrsJAcobs
+					<h2 class="user-handle">
+						${tweet.user.handle}
 						</h2>
 </div>
 				</header>
 				<p class="tweets-posted">
-					HEllo World!
+					${tweet.content.text}
 				</p>
 				<hr>
 				<footer>
 					<span class="time-passed">
-						10 days ago
+					${timeago.format(tweet.created_at)}
 					</span>
 					<span class="tweet-icons">
 						<i class="far fa-flag"></i>
@@ -62,7 +52,22 @@ const createTweetElement = function(tweet){
   );
   return $tweet;
 }
+//add Event listner and prevent default behavior
+// .serialize() function turns a set of form data into a query string. This serialized data should be sent to the server in the data field of the AJAX POST request.
+$("tweet-form").on("submit", event =>{
+  //event.preventDefault();
+  let $tweet = $("tweet-form").serialize();
+  $.post("/tweets/", $tweet, (err, data) => {
+    loadTweets();
+    const $input = $("#tweet-text");
+    $input.val(" ").focus();
+  })
+})
 
-renderTweets(tweetData);
-
+const loadTweets = () => {
+  $.get("/tweets", (tweet) => {
+    renderTweets(tweet);
+  })
+}
+loadTweets();
 });
