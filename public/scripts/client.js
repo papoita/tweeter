@@ -47,9 +47,9 @@ $(document).ready(function () {
 						</h2>
 </div>
 				</header>
-				<p class="tweets-posted">
+				<span class="tweets-posted">
 					${escape(tweet.content.text)}
-				</p>
+				</span>
 				<hr>
 				<footer>
 					<span class="time-passed">

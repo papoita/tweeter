@@ -9,6 +9,12 @@ section.tweet-container {
 	margin: 15px;
 	padding: 15px;
 }
+.tweets-posted {
+	display: block;
+	margin: auto;
+	max-width: 650px;
+	word-wrap: break-word;
+}
 footer {
 	display: flex;
 	flex-direction: row;
