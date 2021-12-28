@@ -66,19 +66,21 @@ $(document).ready(function () {
 		return $tweet;
 	};
 
-  // const errorDisplay = function (errorText){
-
-  // }
+  const errorDisplay = function (errorText){
+$(".error").slideDown("slow").text(errorText);
+setTimeout(()=>{
+  $(".error").hide();}, 5000);
+};
 
 	$("#tweet-form").on("submit", (event) => {
 		event.preventDefault();
 		//validate length of tweet and alert error
 		let lengthTweet = $("#tweet-text").val().length;
 		if (lengthTweet > 140) {
-			$(".error").slideDown().text(`TOO LONG! Only 140 characters allowed`);
+			errorDisplay(`🛑 TOO LONG! Only 140 characters allowed 🛑`);
 			return;
 		} else if (!lengthTweet) {
-			$(".error").slideDown().text("write a tweet");
+		errorDisplay("🛑 TOO SHORT! What are you really thinking? 🛑 ");
 		}
 
 		//serialize and post tweet
