@@ -1,54 +1,64 @@
+/** @format */
+
 section.tweet-container {
-    
-    margin: 5px;
-  }
-
-.tweet{
-  border: solid 3px darkblue;
-    margin: 15px;
-    padding: 15px;
-}
-  footer{
-    display:flex;
-    flex-direction: row;
-    font-size: 16px;
-    justify-content: space-between;
-  }
-   .tweet:hover{
-   box-shadow: 10px 5px 5px grey;
- }
-   .user{
-    display:flex;
-     flex-direction: row;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-  }
-  .user-picture-name{
-  display:flex;
-  justify-content: space-between;
-  
-}
-.user-icon{
-  padding: 5px;
-  margin: 5px;  
+	margin: 5px;
 }
 
-  .user-handle{
-color: grey;
-  }
+.tweet {
+	border: solid 3px darkblue;
+	margin: 15px;
+	padding: 15px;
+}
+footer {
+	display: flex;
+	flex-direction: row;
+	font-size: 16px;
+	justify-content: space-between;
+}
+.tweet:hover {
+	box-shadow: 10px 5px 5px grey;
+}
+.user {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+}
+.user-picture-name {
+	display: flex;
+	justify-content: space-between;
+}
+.user-icon {
+	padding: 5px;
+	margin: 5px;
+}
 
-  .fa-flag:hover{
-    color: darkgoldenrod;
-    cursor: pointer;
-  }
+.user-handle {
+	color: grey;
+}
 
-  .fa-retweet:hover{
-    color: white;
-    cursor: pointer;
-  }
+.fa-flag:hover {
+	color: darkgoldenrod;
+	cursor: pointer;
+}
 
-   .fa-heart:hover{
-    color: red;
-    cursor: pointer;
-  }
+.fa-retweet:hover {
+	color: white;
+	cursor: pointer;
+}
+
+.fa-heart:hover {
+	color: red;
+	cursor: pointer;
+}
+
+.error {
+	display: block;
+	margin: auto;
+	color: red;
+	font-weight: 600;
+	border: solid 5px;
+	text-align: center;
+	max-width: 700px;
+}

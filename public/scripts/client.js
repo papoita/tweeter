@@ -10,6 +10,10 @@
 // Test / driver code (temporary). Eventually will get this from the server.
 
 $(document).ready(function () {
+  //hide error
+  $(".error").hide();
+  //$(".error").empty();
+
 	//avoid XSS attacks on string literals
 	const escape = function (str) {
 		let div = document.createElement("div");
@@ -62,15 +66,19 @@ $(document).ready(function () {
 		return $tweet;
 	};
 
+  // const errorDisplay = function (errorText){
+
+  // }
+
 	$("#tweet-form").on("submit", (event) => {
 		event.preventDefault();
 		//validate length of tweet and alert error
 		let lengthTweet = $("#tweet-text").val().length;
 		if (lengthTweet > 140) {
-			alert("Only 140 characters allowed");
+			$(".error").slideDown().text(`TOO LONG! Only 140 characters allowed`);
 			return;
 		} else if (!lengthTweet) {
-			alert("write a tweet");
+			$(".error").slideDown().text("write a tweet");
 		}
 
 		//serialize and post tweet

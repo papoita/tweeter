@@ -4,12 +4,13 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin: 0 0 10px 0;
 	flex-direction: column;
-background: rgba(9,9,121,1);
-background-image: url("/images/back-pattern.png");
+	background: rgba(9, 9, 121, 1);
+	background-image: url("/images/back-pattern.png");
 }
 
-#profile-name{
+#profile-name {
 	font-weight: 600;
-	color:white;
+	color: white;
 }
