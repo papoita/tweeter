@@ -31,10 +31,11 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
-/*mobile Style*/
+/*decided to use a color pallette to unify the app https://colorhunt.co/palette/14279b3d56b25c7aeae6e6e6
+ */
 
 main {
-	width: 90%;
+	width: 100%;
 	margin: auto;
 	background-color: #f4f1ec;
 }
@@ -45,4 +46,23 @@ main {
 
 #profile-name {
 	margin-top: 0;
+}
+/* mobile and tablet style */
+@media only screen and (min-width: 600px) {
+	nav .user-profile .container {
+		width: 100%;
+	}
+	nav {
+		background-color: rgb(92, 122, 234);
+		background-image: url("/images/back-pattern.png");
+	}
+}
+
+/*desktop Style*/
+@media only screen and (min-width: 1024px) {
+	.user-profile {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+	}
 }

@@ -1,51 +1,53 @@
-.compose-tweet{
-  font-weight: 600;
-}
+/** @format */
+
 section {
-  background-color: rgba(0,212,255,1);
-  padding: 20px;
-  background-image: url("/images/back-pattern.png");
-  margin-top: 5px;
-	
+	background-color: rgb(230, 230, 230);
+	display: block;
+	padding: 20px;
 }
 
-#tweet-form{
-  display:block;
-  
+#tweet-form {
+	display: block;
+	padding: 20px;
+}
+::placeholder {
+	font-weight: bold;
 }
 
-#tweet-text{
-  font-style: italic;
-  padding: 10px;
+textarea {
+	width: 100%;
+	color: black;
+	font-weight: bolder;
+	background: transparent;
+	border: none;
+	outline: none;
+	font-style: italic;
 }
 
-#submit-btn{
-  color: whitesmoke;
-  background-color: #0F248A;
-  display: block;
-  margin:  auto;
-  padding: 10px 20px;;
-  border-radius: 10px;
-  border: 1px solid #1482C9;
-
+#submit-btn {
+	background: rgb(20, 39, 155);
+	color: white;
+	display: flex;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: 1px solid #1482c9;
+	font-family: Bungee, sans-serif;
+	font-size: medium;
 }
 
-#submit-btn:hover{
-color: #0F248A;
-  background-color: white;
-  display: block;
-  margin:  auto;
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: 2px solid #0F248A;
-  cursor:pointer;
+#submit-btn:hover {
+	border: 1px solid #1482c9;
+	font-family: Bungee, sans-serif;
+	background-color: rgb(92, 122, 234);
+	display: flex;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: 2px solid rgb(20, 39, 155);
+	cursor: pointer;
 }
 
-.counter{
-  font-weight: 600;
-  display:flex;
-  justify-content: flex-end;
+.counter {
+	font-weight: 600;
+	display: flex;
+	justify-content: flex-end;
 }
-
-
-

@@ -60,7 +60,7 @@
 
 <body>
 	<!-- Top nav bar (fixed) -->
-	<nav class="overlay">
+	<nav>
 		<span class="logo">tweeter</span>
 		<div class="nav-content">
 			<span class="write-new-tweet">Write a new tweet</span>
@@ -83,12 +83,13 @@
 	<main class="container">
 		<section class="new-tweet">
 
-			<h2 class="compose-tweet">Compose Tweet</h2>
-			<div class="col-12">
+			<h2 class="compose-tweet"></h2>
+			<div>
 				<form action="/tweets" method="POST" class="tweet-form" id="tweet-form">
-					<textarea class="col-11" name="text" id="tweet-text" placeholder="what are you humming about..."
-						autofocus="on"></textarea>
-					<output name="counter" class="counter" for="tweet-text"></output>
+					<textarea class="col-12" name="text" id="tweet-text" placeholder="what are you humming about..."
+						autofocus="off"></textarea>
+					<hr>
+					<output name="counter" class="counter" for="tweet-text">140</output>
 
 					<div>
 						<button id="submit-btn" type="submit">Tweet</button>
