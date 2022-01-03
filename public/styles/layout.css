@@ -34,10 +34,13 @@ body {
 /*decided to use a color pallette to unify the app https://colorhunt.co/palette/14279b3d56b25c7aeae6e6e6
  */
 
-main {
+.container {
 	width: 100%;
-	margin: auto;
+	margin: 0px;
+	padding: 0px;
 	background-color: #f4f1ec;
+	display: flex;
+	flex-direction: row;
 }
 
 #profile-image {
@@ -52,17 +55,16 @@ main {
 	nav .user-profile .container {
 		width: 100%;
 	}
-	nav {
-		background-color: rgb(92, 122, 234);
-		background-image: url("/images/back-pattern.png");
-	}
 }
 
 /*desktop Style*/
 @media only screen and (min-width: 1024px) {
+	nav {
+		background-color: blue;
+	}
+
 	.user-profile {
-		display: flex;
-		flex-direction: column;
-		position: absolute;
+		margin: 200px 100px;
+		padding: 0px 100px;
 	}
 }
