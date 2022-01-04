@@ -6,7 +6,6 @@ nav {
 	background-color: rgb(92, 122, 234);
 	background-image: url("/images/back-pattern.png");
 	color: white;
-
 	padding: 1.5em;
 	display: flex;
 	z-index: 10;

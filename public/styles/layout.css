@@ -60,11 +60,14 @@ body {
 /*desktop Style*/
 @media only screen and (min-width: 1024px) {
 	nav {
-		background-color: blue;
+		background: blue;
 	}
 
 	.user-profile {
 		margin: 200px 100px;
 		padding: 0px 100px;
+	}
+	.input {
+		margin: 200px 0px;
 	}
 }
