@@ -35,35 +35,15 @@ body {
  */
 
 /* mobile style */
-@media (min-width: 576px) {
+@media (max-width: 1023px) {
 	.container {
 		width: 100%;
 		padding: 0px;
 		background-color: #f4f1ec;
 		display: flex;
 		flex-direction: column;
-	}
-	nav {
-		background-color: rgb(92, 122, 234);
-		background-image: url("/images/back-pattern.png");
-	}
-
-	#profile-image {
-		margin-top: 5px;
-	}
-
-	#profile-name {
-		margin-top: 0;
-	}
-}
-/*tablet*/
-@media (min-width: 768px) {
-	.container {
-		width: 100%;
-		padding: 0px;
-		background-color: #f4f1ec;
-		display: flex;
-		flex-direction: column;
+		justify-content: center;
+		max-width: 1023px;
 	}
 	nav {
 		background-color: rgb(92, 122, 234);
@@ -84,8 +64,9 @@ body {
 	.container {
 		display: flex;
 		flex-flow: row;
-		justify-content: space-around;
+		justify-content: space-between;
 		width: 100%;
+		max-width: 1800px;
 	}
 
 	nav {
@@ -93,14 +74,15 @@ body {
 	}
 
 	.user-profile {
-		margin: 200px 100px;
+		margin-right: 100px;
+		margin-top: 100px;
 		padding: 0px 100px;
 		display: flex;
 		width: 40%;
 		max-height: 600px;
 	}
 	.input {
-		margin: 200px 0px;
+		margin: 100px 0px;
 		width: 60%;
 		max-width: 3000px;
 	}
