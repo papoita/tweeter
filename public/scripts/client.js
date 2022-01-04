@@ -76,6 +76,7 @@ setTimeout(()=>{
 		event.preventDefault();
 		//validate length of tweet and alert error
 		let lengthTweet = $("#tweet-text").val().length;
+		console.log("left tewe");
 		if (lengthTweet > 140) {
 			errorDisplay(`🛑 TOO LONG! Only 140 characters allowed 🛑`);
 			return;
@@ -91,6 +92,7 @@ setTimeout(()=>{
 			//clears text box after post
 			const $input = $("#tweet-text");
 			$input.val(" ").focus();
+			$(".counter").html("140");
 		});
 	});
 
