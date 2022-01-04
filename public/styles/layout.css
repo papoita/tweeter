@@ -21,9 +21,9 @@ html {
  */
 
 body {
-	*color: #545149;
+	color: #545149;
 	background-color: #f4f1ec;
-	font-family: Source Sans Pro, sans-serif;
+	font-family: "Source Sans Pro", sans-serif;
 	font-size: 24px;
 }
 
@@ -33,57 +33,3 @@ body {
 
 /*decided to use a color pallette to unify the app https://colorhunt.co/palette/14279b3d56b25c7aeae6e6e6
  */
-
-/* mobile style */
-@media only screen and (min-width: 600px) and (max-width: 1023px) {
-	.container {
-		width: 100%;
-		padding: 0px;
-		background-color: #f4f1ec;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		max-width: 1023px;
-	}
-	nav {
-		background-color: rgb(92, 122, 234);
-		background-image: url("/images/back-pattern.png");
-	}
-
-	#profile-image {
-		margin-top: 5px;
-	}
-
-	#profile-name {
-		margin-top: 0;
-	}
-}
-
-/*desktop Style*/
-@media only screen and (min-width: 1024px) and (max-width: 2000px) {
-	.container {
-		display: flex;
-		flex-flow: row;
-		justify-content: space-between;
-		width: 100%;
-		max-width: 1800px;
-	}
-
-	nav {
-		background-color: rgb(20, 39, 155);
-	}
-
-	.user-profile {
-		margin-right: 100px;
-		margin-top: 100px;
-		padding: 0px 100px;
-		display: flex;
-		width: 40%;
-		max-height: 600px;
-	}
-	.input {
-		margin: 100px 0px;
-		width: 60%;
-		max-width: 3000px;
-	}
-}

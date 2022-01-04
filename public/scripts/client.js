@@ -1,18 +1,14 @@
 /**
  * /*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- *
+ * Client-side JS logic 
  * @format
  */
 
-// Test / driver code (temporary). Eventually will get this from the server.
+
 
 $(document).ready(function () {
   //hide error
   $(".error").hide();
-  //$(".error").empty();
 
 	//avoid XSS attacks on string literals
 	const escape = function (str) {
@@ -23,7 +19,6 @@ $(document).ready(function () {
 
 	//create new DOM element and appends it
 	const renderTweets = function (tweets) {
-		//(doesn't reload all tweets
 		$("#tweet-container").empty();
 		for (const tweet of tweets) {
 			let $renderTweet = createTweetElement(tweet);
@@ -69,14 +64,13 @@ $(document).ready(function () {
   const errorDisplay = function (errorText){
 $(".error").slideDown("slow").text(errorText);
 setTimeout(()=>{
-  $(".error").hide();}, 5000);
+  $(".error").hide();}, 3000);
 };
 
 	$("#tweet-form").on("submit", (event) => {
 		event.preventDefault();
 		//validate length of tweet and alert error
 		let lengthTweet = $("#tweet-text").val().length;
-		console.log("left tewe");
 		if (lengthTweet > 140) {
 			errorDisplay(`🛑 TOO LONG! Only 140 characters allowed 🛑`);
 			return;
