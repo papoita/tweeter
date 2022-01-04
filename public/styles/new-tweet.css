@@ -12,6 +12,7 @@ section {
 }
 ::placeholder {
 	font-weight: bold;
+	color: rgb(60, 58, 58);
 }
 
 textarea {
@@ -22,6 +23,7 @@ textarea {
 	border: none;
 	outline: none;
 	font-style: italic;
+	padding: 0px;
 }
 
 #submit-btn {
