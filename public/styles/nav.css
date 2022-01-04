@@ -3,8 +3,6 @@
 nav {
 	height: 90 px;
 	width: 100%;
-	background-color: rgb(92, 122, 234);
-	background-image: url("/images/back-pattern.png");
 	color: white;
 	padding: 1.5em;
 	display: flex;

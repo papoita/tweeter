@@ -33,23 +33,50 @@ body {
 
 /*decided to use a color pallette to unify the app https://colorhunt.co/palette/14279b3d56b25c7aeae6e6e6
  */
-/* mobile and tablet style */
-.container {
-	width: 100%;
-	margin: 0px;
-	padding: 0px;
-	background-color: #f4f1ec;
-	display: flex;
-	flex-direction: column;
-	max-width: 1023px;
-}
 
-#profile-image {
-	margin-top: 5px;
-}
+/* mobile style */
+@media (min-width: 576px) {
+	.container {
+		width: 100%;
+		padding: 0px;
+		background-color: #f4f1ec;
+		display: flex;
+		flex-direction: column;
+	}
+	nav {
+		background-color: rgb(92, 122, 234);
+		background-image: url("/images/back-pattern.png");
+	}
 
-#profile-name {
-	margin-top: 0;
+	#profile-image {
+		margin-top: 5px;
+	}
+
+	#profile-name {
+		margin-top: 0;
+	}
+}
+/*tablet*/
+@media (min-width: 768px) {
+	.container {
+		width: 100%;
+		padding: 0px;
+		background-color: #f4f1ec;
+		display: flex;
+		flex-direction: column;
+	}
+	nav {
+		background-color: rgb(92, 122, 234);
+		background-image: url("/images/back-pattern.png");
+	}
+
+	#profile-image {
+		margin-top: 5px;
+	}
+
+	#profile-name {
+		margin-top: 0;
+	}
 }
 
 /*desktop Style*/
@@ -58,10 +85,11 @@ body {
 		display: flex;
 		flex-flow: row;
 		justify-content: space-around;
+		width: 100%;
 	}
 
 	nav {
-		background: blue;
+		background-color: rgb(20, 39, 155);
 	}
 
 	.user-profile {
