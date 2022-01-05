@@ -1,17 +1,8 @@
- 
+ const escape = require("./helpers.js");
+
 $(document).ready(function () {
   $(".error").hide();
 
-	/**
-	 * Feedbacks:
-	 * 1. Can move escape() to helpers.js or utilitity.js file to make code more modular (advance).
-	 * - this will allow you to export escape() and import to use in other parts of code in the future.
-	 */
-	const escape = function (str) {
-		const div = document.createElement("div");
-		div.appendChild(document.createTextNode(str));
-		return div.innerHTML;
-	};
 
 	const renderTweets = function (tweets) {
 		$("#tweets-container").empty();
@@ -22,12 +13,6 @@ $(document).ready(function () {
 	};
 
 	const createTweetElement = function (tweet) {
-		/**
-		 * Feedbacks:
-		 * 1. can return instead of saving to a variable.
-		 * 2. can destructure tweet to get values out for readability.
-		 * 3. please lint to clean up indentation.
-		 */
 		const { content, user, created_at } = tweet;
 		const { avatars, handle, name } = user;
 
