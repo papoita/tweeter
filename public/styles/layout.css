@@ -31,5 +31,10 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
+.container {
+	width: 90%;
+	margin: auto;
+}
+
 /*decided to use a color pallette to unify the app https://colorhunt.co/palette/14279b3d56b25c7aeae6e6e6
  */

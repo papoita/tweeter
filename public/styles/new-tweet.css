@@ -1,14 +1,14 @@
 /** @format */
 
-section {
+/*section {
 	background-color: rgb(230, 230, 230);
 	display: block;
 	padding: 20px;
 	width: 100%;
-}
+}*/
 
 #tweet-form {
-	display: block;
+	/*display: block;*/
 	padding: 20px;
 }
 ::placeholder {

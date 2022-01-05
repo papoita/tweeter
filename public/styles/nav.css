@@ -1,21 +1,17 @@
 /** @format */
 
 nav {
-	height: 90 px;
 	width: 100%;
 	color: white;
 	padding: 1.5em;
 	display: flex;
-	z-index: 10;
-	position: sticky;
-	/*height: 400px;*/
-	width: 100%;
+	position: fixed;
 	top: 0;
 }
 
 .nav-content {
 	margin-left: auto;
-	display: block;
+	/*	display: block;*/
 	text-align: center;
 }
 .logo {

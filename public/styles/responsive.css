@@ -5,14 +5,12 @@
  */
 
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
-	.container {
+	body {
 		width: 100%;
-		padding: 0px;
-		background-color: #f4f1ec;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		max-width: 1023px;
+		/*max-width: 1023px;*/
 	}
 	nav {
 		background-color: rgb(92, 122, 234);
@@ -34,29 +32,33 @@
 
 /*desktop Style*/
 @media only screen and (min-width: 1024px) and (max-width: 2000px) {
-	.container {
+	body {
 		display: flex;
-		flex-flow: row;
-		justify-content: space-between;
-		width: 100%;
-		max-width: 1800px;
+
+		flex-wrap: wrap;
 	}
 
 	nav {
 		background-color: rgb(20, 39, 155);
+		width: 100%;
 	}
 
 	.user-profile {
 		margin-right: 1em;
 		margin-top: 1em;
 		padding: 0px 100px;
-		display: flex;
-		width: 40%;
+		width: 35%;
 		max-height: 600px;
 	}
-	.input {
+
+	.container {
+		width: 55%;
+		padding-top: 5em;
+	}
+
+	.new-tweet {
+		display: flex;
+		flex-direction: column;
 		margin: 1em 0;
-		width: 60%;
-		max-width: 3000px;
 	}
 }

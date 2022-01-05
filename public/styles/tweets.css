@@ -2,11 +2,11 @@
 
 .tweet {
 	border: solid 3px darkblue;
-	margin: 15px;
-	padding: 15px;
+	margin: 1em;
+	padding: 1em;
 }
 .tweets-posted {
-	display: block;
+	/*display: block;*/
 	margin: auto;
 	max-width: 100%;
 	word-wrap: break-word;
@@ -56,7 +56,7 @@ footer {
 }
 
 .error {
-	display: block;
+	/*display: block;*/
 	margin: auto;
 	color: red;
 	font-weight: 600;

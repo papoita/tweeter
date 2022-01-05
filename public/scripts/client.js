@@ -19,10 +19,10 @@ $(document).ready(function () {
 
 	//create new DOM element and appends it
 	const renderTweets = function (tweets) {
-		$("#tweet-container").empty();
+		$("#tweets-container").empty();
 		for (const tweet of tweets) {
 			let $renderTweet = createTweetElement(tweet);
-			$("#tweet-container").prepend($renderTweet);
+			$("#tweets-container").prepend($renderTweet);
 		}
 	};
 
