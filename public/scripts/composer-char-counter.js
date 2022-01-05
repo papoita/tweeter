@@ -1,17 +1,16 @@
 $(document).ready(function() {
+  $("#tweet-text").on('input', function() {
+    const charLength = $(this).val().length;
+    const maxLength = 140;
+    const counter = maxLength - charLength;
 
-  $("#tweet-text").on('input', function(){
-const $charLength = $(this).val().length;
-const $charLeft = 140 - $charLength;
-
-if ($charLeft > 0){
-let count = $(this).siblings("output").css( "color", "black" );
-count.text($charLeft);
-} else {
-  let count = $(this).siblings("output").css( "color", "red" );
-count.text($charLeft);
-}
-
+    let count = 0;
+    if (counter > 0) {
+      count = $(this).siblings("output").css("color", "black");
+      count.text(counter);
+    } else {
+      count = $(this).siblings("output").css("color", "red");
+      count.text(counter);
+    }
   });
-
 });
