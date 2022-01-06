@@ -2,18 +2,18 @@
 $(document).ready(function() {
   $(".error").hide();
 
+  const escape = function (str) {
+		const div = document.createElement("div");
+		div.appendChild(document.createTextNode(str));
+		return div.innerHTML;
+	};
+
 	$(".write-new-tweet, .btn-top-page").click(function(e){
 		e.preventDefault();
 		//$("body").scrollTop()
 		$("html, body").animate({ scrollTop: "0" })
 		$("#tweet-text").focus();
 	});
-
-  const escape = function(str) {
-    const div = document.createElement("div");
-    div.appendChild(document.createTextNode(str));
-    return div.innerHTML;
-  };
 
   const renderTweets = function(tweets) {
     $("#tweets-container").empty();
@@ -36,11 +36,7 @@ $(document).ready(function() {
 							${name}
 						</p>
 					</div>
-					<div>
-						<h2 class="user-handle">
-							${handle}
-							</h2>
-					</div>
+					<h2 class="user-handle">${handle}</h2>
 				</header>
 				<span class="tweets-posted">
 					${escape(content.text)}
