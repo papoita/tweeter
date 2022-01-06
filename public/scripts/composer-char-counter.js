@@ -1,16 +1,15 @@
 $(document).ready(function() {
-  $("#tweet-text").on('input', function() {
+  $("#new-tweet-input").on('input', function() {
     const charLength = $(this).val().length;
     const maxLength = 140;
-    const counter = maxLength - charLength;
+    const count = maxLength - charLength;
+    const counter = $(this).siblings("output");
+    counter.text(count);
 
-    let count = 0;
-    if (counter >= 0) {
-      count = $(this).siblings("output").css("color", "black");
-      count.text(counter);
+    if (count < 0) {
+     counter.css("color", "red");
     } else {
-      count = $(this).siblings("output").css("color", "red");
-      count.text(counter);
+      counter.css("color", "black");
     }
   });
 });
