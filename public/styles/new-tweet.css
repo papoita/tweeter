@@ -19,10 +19,11 @@
 }
 
 .new-tweet-input:focus {
+	outline: none;
+	/*
 	outline-color: rgb(92, 122, 234);
 	opacity: 50%;
-	/*oultine-color: #f4f1ec;
-	would be the same as compass instructions I considered the focus outline colored can improve user experience*/
+	I considered the focus outline colored can improve user experience so I left it in the screenshots to demonstrate*/
 }
 
 .new-tweet-submit {
