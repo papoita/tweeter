@@ -24,8 +24,11 @@ Based on the starter code from LHL it was build upon using HTML, CSS, JS, jQuery
 
 ## How it looks like
 
-![Video of Features](https://github.com/papoita/tweeter/blob/master/docs/responsive_m.mov)
+Mobile Version
+![Mobile](https://github.com/papoita/tweeter/blob/master/docs/mobile.png)
 
-![Mobile](https://github.com/papoita/tweeter/blob/master/docs/counter_error.png)
-
+Desktop version
 ![Desktop](https://github.com/papoita/tweeter/blob/master/docs/desktop.png)
+
+Counter error feature in desktop version
+![Counter error](https://github.com/papoita/tweeter/blob/master/docs/counter_error.png)
