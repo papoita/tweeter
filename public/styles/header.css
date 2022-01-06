@@ -9,7 +9,8 @@
 	background-image: url("/images/back-pattern.png");
 }
 
-#profile-name {
+.user-profile-name {
 	font-size: 1.5em;
 	color: white;
+	text-align: center;
 }

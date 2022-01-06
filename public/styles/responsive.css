@@ -4,7 +4,7 @@
  * @format
  */
 
-@media only screen and (min-width: 600px) and (max-width: 1023px) {
+@media only screen and (min-width: 300px) and (max-width: 1023px) {
 	body {
 		width: 100%;
 		display: flex;
@@ -12,25 +12,26 @@
 		justify-content: center;
 		/*max-width: 1023px;*/
 	}
-	nav {
+
+	.navbar-top {
 		background-color: rgb(92, 122, 234);
 		background-image: url("/images/back-pattern.png");
 	}
 
-	.user-profile {
-		padding: 1em 0;
+	.navbar-top-menu i {
+		color: tomato;
 	}
 
-	#profile-image {
+	.user-profile {
+		padding: 5em 0 1em 0;
+	}
+
+	.user-profile-avatar {
 		margin-top: 0.5em;
 	}
 
-	#profile-name {
+	.user-profile-name {
 		margin-top: 0;
-	}
-
-	#double-down {
-		color: tomato;
 	}
 }
 
@@ -38,13 +39,16 @@
 @media only screen and (min-width: 1024px) and (max-width: 2000px) {
 	body {
 		display: flex;
-
 		flex-wrap: wrap;
 	}
 
-	nav {
+	.navbar-top {
 		background-color: rgb(20, 39, 155);
 		width: 100%;
+	}
+
+	.navbar-top-menu i {
+		color: red;
 	}
 
 	.user-profile {
@@ -65,9 +69,5 @@
 		display: flex;
 		flex-direction: column;
 		margin: 1em 0;
-	}
-
-	#double-down {
-		color: red;
 	}
 }

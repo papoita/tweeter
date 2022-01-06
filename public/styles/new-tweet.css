@@ -1,22 +1,15 @@
 /** @format */
 
-/*section {
-	background-color: rgb(230, 230, 230);
-	display: block;
-	padding: 20px;
-	width: 100%;
-}*/
-
-#tweet-form {
+.new-tweet-form {
 	/*display: block;*/
 	padding: 20px;
 }
-::placeholder {
+.new-tweet-form::placeholder {
 	font-weight: bold;
 	color: rgb(60, 58, 58);
 }
 
-textarea {
+.new-tweet-input {
 	width: 100%;
 	color: black;
 	font-weight: bolder;
@@ -26,12 +19,12 @@ textarea {
 	padding: 0.5em;
 }
 
-textarea:focus {
+.new-tweet-input:focus {
 	outline-color: rgb(92, 122, 234);
 	opacity: 50%;
 }
 
-#submit-btn {
+.new-tweet-submit {
 	background: rgb(20, 39, 155);
 	color: white;
 	display: flex;
@@ -42,7 +35,7 @@ textarea:focus {
 	font-size: medium;
 }
 
-#submit-btn:hover {
+.new-tweet-submit:hover {
 	border: 1px solid #1482c9;
 	font-family: Bungee, sans-serif;
 	background-color: rgb(92, 122, 234);
@@ -53,8 +46,18 @@ textarea:focus {
 	cursor: pointer;
 }
 
-.counter {
+.new-tweet-counter {
 	font-weight: 600;
 	display: flex;
 	justify-content: flex-end;
+}
+
+.new-tweet-error {
+	margin: auto;
+	color: tomato;
+	font-weight: 600;
+	border: solid 5px;
+	text-align: center;
+	width: 700px;
+	padding: 1em;
 }

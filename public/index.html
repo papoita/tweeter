@@ -42,35 +42,37 @@
 </head>
 
 <body>
-	<nav>
-		<span class="logo">tweeter</span>
-		<div class="nav-content">
-			<a href="" class="write-new-tweet"><strong>Write</strong> a new tweet</a>
-			<i class="fas fa-angle-double-down" id="double-down"></i>
+	<nav class="navbar-top">
+		<span class="navbar-top-logo">tweeter</span>
+		<div class="navbar-top-menu">
+			<a href="" class="write-new-tweet" id="write-new-tweet"><strong>Write</strong> a new tweet</a>
+			<i class="fas fa-angle-double-down"></i>
 		</div>
 	</nav>
 
 	<header class="user-profile">
-		<img id="profile-image" src="/images/profile-hex.png" />
+		<img class="user-profile-avatar" src="/images/profile-hex.png" alt="user profile avatar" />
 		<br />
-		<div id="profile-name"> <b> Paola</b> Perez</div>
+		<div class="user-profile-name"> <b> Paola</b> Perez</div>
 	</header>
 
 	<main class="container">
 		<section class="new-tweet">
-			<h4 class="error"></h4>
-			<form action="/tweets" method="POST" class="tweet-form" id="tweet-form">
-				<textarea name="text" id="tweet-text" placeholder="What are you humming about..." autofocus="on"></textarea>
+			<h4 class="new-tweet-error" id="new-tweet-error"></h4>
+			<form action="/tweets" method="POST" class="new-tweet-form" id="new-tweet-form">
+				<textarea name="text" class="new-tweet-input" id="new-tweet-input" placeholder="What are you humming about..."
+					autofocus="on"></textarea>
 				<hr>
-				<output name="counter" class="counter" for="tweet-text">140</output>
-				<button id="submit-btn" type="submit">Tweet</button>
+				<output name="counter" class="new-tweet-counter" id="new-tweet-counter" for="tweet-text">140</output>
+				<button class="new-tweet-submit" type="submit">Tweet</button>
 			</form>
 		</section>
+
 		<section id="tweets-container"></section>
 	</main>
 
 	<footer class="footer">
-		<a href="" class="btn-top-page">Page TOP</a>
+		<a href="" class="btn-top-page" id="btn-top-page">Page TOP</a>
 	</footer>
 </body>
 

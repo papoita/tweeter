@@ -1,29 +1,26 @@
 /** @format */
 
 .footer {
-	width: 100%;
+	display: flex;
 	justify-content: flex-end;
+	align-items: center;
+	width: 100%;
 	padding: 3em;
 }
 
 .btn-top-page {
-	text-decoration: none;
 	background-color: rgb(93, 123, 234);
-	color: white;
-	display: flex;
-	padding: 10px 20px;
-	border-radius: 10px;
 	border: 2px solid rgb(20, 39, 155);
+	border-radius: 10px;
+	text-decoration: none;
+	color: white;
 	font-family: Bungee, sans-serif;
 	font-size: medium;
+	padding: 10px 20px;
 }
 
 .btn-top-page:hover {
-	font-family: Bungee, sans-serif;
-	border: 2px solid rgb(93, 123, 234);
 	background-color: rgb(20, 39, 155);
-	display: flex;
-	padding: 10px 20px;
-	border-radius: 10px;
+	border: 2px solid rgb(93, 123, 234);
 	cursor: pointer;
 }
