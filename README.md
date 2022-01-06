@@ -26,4 +26,6 @@ Based on the starter code from LHL it was build upon using HTML, CSS, JS, jQuery
 
 ![Video of Features](https://github.com/papoita/tweeter/blob/master/docs/responsive_m.mov)
 
-![Counter behaviour](https://github.com/papoita/tweeter/blob/master/docs/counter_error.png)
+![Mobile](https://github.com/papoita/tweeter/blob/master/docs/counter_error.png)
+
+![Desktop](https://github.com/papoita/tweeter/blob/master/docs/desktop.png)
