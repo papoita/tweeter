@@ -7,6 +7,7 @@ nav {
 	display: flex;
 	position: fixed;
 	top: 0;
+	z-index: 10;
 }
 
 .nav-content {
@@ -35,7 +36,6 @@ nav {
 
 #double-down {
 	display: block;
-	color: red;
 	animation: arrowdown 0.8s;
 	animation-direction: alternate;
 	animation-iteration-count: infinite;

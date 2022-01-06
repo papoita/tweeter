@@ -1,28 +1,29 @@
 /** @format */
 
-footer {
-	color: red;
+.footer {
+	width: 100%;
 	justify-content: flex-end;
+	padding: 3em;
 }
 
-#btn-top-page {
-	background: rgb(20, 39, 155);
+.btn-top-page {
+	text-decoration: none;
+	background-color: rgb(93, 123, 234);
 	color: white;
 	display: flex;
 	padding: 10px 20px;
 	border-radius: 10px;
-	border: 1px solid #1482c9;
+	border: 2px solid rgb(20, 39, 155);
 	font-family: Bungee, sans-serif;
 	font-size: medium;
 }
 
-#btn-top-page:hover {
-	border: 1px solid #1482c9;
+.btn-top-page:hover {
 	font-family: Bungee, sans-serif;
-	background-color: rgb(92, 122, 234);
+	border: 2px solid rgb(93, 123, 234);
+	background-color: rgb(20, 39, 155);
 	display: flex;
 	padding: 10px 20px;
 	border-radius: 10px;
-	border: 2px solid rgb(20, 39, 155);
 	cursor: pointer;
 }

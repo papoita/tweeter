@@ -28,6 +28,10 @@
 	#profile-name {
 		margin-top: 0;
 	}
+
+	#double-down {
+		color: tomato;
+	}
 }
 
 /*desktop Style*/
@@ -61,5 +65,9 @@
 		display: flex;
 		flex-direction: column;
 		margin: 1em 0;
+	}
+
+	#double-down {
+		color: red;
 	}
 }

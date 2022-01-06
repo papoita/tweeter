@@ -2,6 +2,13 @@
 $(document).ready(function() {
   $(".error").hide();
 
+	$(".write-new-tweet, .btn-top-page").click(function(e){
+		e.preventDefault();
+		//$("body").scrollTop()
+		$("html, body").animate({ scrollTop: "0" })
+		$("#tweet-text").focus();
+	});
+
   const escape = function(str) {
     const div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
@@ -11,8 +18,8 @@ $(document).ready(function() {
   const renderTweets = function(tweets) {
     $("#tweets-container").empty();
     for (const tweet of tweets) {
-      const $renderTweet = createTweetElement(tweet);
-      $("#tweets-container").prepend($renderTweet);
+      const renderTweet = createTweetElement(tweet);
+      $("#tweets-container").prepend(renderTweet);
     }
   };
 

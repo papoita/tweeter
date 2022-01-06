@@ -22,9 +22,13 @@ textarea {
 	font-weight: bolder;
 	background: transparent;
 	border: none;
-	outline: none;
 	font-style: italic;
-	padding: 0px;
+	padding: 0.5em;
+}
+
+textarea:focus {
+	outline-color: rgb(92, 122, 234);
+	opacity: 50%;
 }
 
 #submit-btn {
@@ -33,7 +37,7 @@ textarea {
 	display: flex;
 	padding: 10px 20px;
 	border-radius: 10px;
-	border: 1px solid #1482c9;
+	border: 1px solid rgb(20, 130, 201);
 	font-family: Bungee, sans-serif;
 	font-size: medium;
 }
