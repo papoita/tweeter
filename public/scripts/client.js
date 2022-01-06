@@ -71,12 +71,12 @@ $(document).ready(function() {
 
     const lengthTweet = $("#tweet-text").val().length;
 
-    if (lengthTweet > 140) {
-      errorDisplay("🛑 TOO LONG! Only 140 characters allowed 🛑");
+    if (!lengthTweet) {
+      return errorDisplay("🛑 TOO SHORT! What are you really thinking? 🛑 ");
     }
 
-    if (!lengthTweet) {
-      errorDisplay("🛑 TOO SHORT! What are you really thinking? 🛑 ");
+    if (lengthTweet > 140) {
+      return errorDisplay("🛑 TOO LONG! Only 140 characters allowed 🛑");
     }
 
     let $tweet = $("#tweet-form").serialize();

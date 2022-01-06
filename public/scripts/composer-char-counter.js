@@ -5,7 +5,7 @@ $(document).ready(function() {
     const counter = maxLength - charLength;
 
     let count = 0;
-    if (counter > 0) {
+    if (counter >= 0) {
       count = $(this).siblings("output").css("color", "black");
       count.text(counter);
     } else {
