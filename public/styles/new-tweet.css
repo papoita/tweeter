@@ -1,7 +1,6 @@
 /** @format */
 
 .new-tweet-form {
-	/*display: block;*/
 	padding: 20px;
 }
 .new-tweet-form::placeholder {
@@ -22,6 +21,8 @@
 .new-tweet-input:focus {
 	outline-color: rgb(92, 122, 234);
 	opacity: 50%;
+	/*oultine-color: #f4f1ec;
+	would be the same as compass instructions I considered the focus outline colored can improve user experience*/
 }
 
 .new-tweet-submit {

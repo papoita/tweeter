@@ -23,7 +23,7 @@
 	}
 
 	.user-profile {
-		padding: 5em 0 1em 0;
+		padding: 1em 0 1em 0;
 	}
 
 	.user-profile-avatar {
@@ -43,8 +43,9 @@
 	}
 
 	.navbar-top {
-		background-color: rgb(20, 39, 155);
+		background-color: rgb(64, 86, 161);
 		width: 100%;
+		height: 120px;
 	}
 
 	.navbar-top-menu i {
@@ -54,15 +55,15 @@
 	.user-profile {
 		margin-right: 1em;
 		margin-left: 1.5em;
-		margin-top: 7em;
+		margin-top: 3em;
 		padding: 0px 100px;
 		width: 35%;
-		max-height: 600px;
+		max-height: 400px;
 	}
 
 	.container {
 		width: 55%;
-		padding-top: 5em;
+		padding-top: 1em;
 	}
 
 	.new-tweet {
