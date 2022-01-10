@@ -1,9 +1,11 @@
 $(document).ready(function() {
   $("#new-tweet-error").hide();
+  $("#new-tweet-form").hide();
 
 	$("#write-new-tweet, #btn-top-page").click(function(event){
 		event.preventDefault();
 		$("html, body").animate({ scrollTop: "0" })
+    $("#new-tweet-form").show();
 		$("#new-tweet-input").focus();
 	});
 
